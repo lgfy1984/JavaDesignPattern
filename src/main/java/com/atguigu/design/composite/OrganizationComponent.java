@@ -2,20 +2,21 @@ package com.atguigu.design.composite;
 
 public abstract class OrganizationComponent {
 
-	private String name; // ����
-	private String des; // ˵��
-	
+
+	private String name; // 名字
+	private String des; // 说明
+
 	protected  void add(OrganizationComponent organizationComponent) {
-		//Ĭ��ʵ��
-		throw new UnsupportedOperationException();
-	}
-	
-	protected  void remove(OrganizationComponent organizationComponent) {
-		//Ĭ��ʵ��
+		//默认实现
 		throw new UnsupportedOperationException();
 	}
 
-	//������
+	protected  void remove(OrganizationComponent organizationComponent) {
+		//默认实现
+		throw new UnsupportedOperationException();
+	}
+
+	//构造器
 	public OrganizationComponent(String name, String des) {
 		super();
 		this.name = name;
@@ -37,8 +38,8 @@ public abstract class OrganizationComponent {
 	public void setDes(String des) {
 		this.des = des;
 	}
-	
-	//����print, ���ɳ����, ���඼��Ҫʵ��
+
+	//方法print, 做成抽象的, 子类都需要实现
 	protected abstract void print();
 	
 	

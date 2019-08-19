@@ -7,10 +7,10 @@ import com.atguigu.design.factory.factorymethod.pizzastore.pizza.BJPepperPizza;
 
 public class BJOrderPizza extends OrderPizza {
 
-	
+
 	@Override
-    Pizza createPizza(String orderType) {
-	
+	Pizza createPizza(String orderType) {
+
 		Pizza pizza = null;
 		if(orderType.equals("cheese")) {
 			pizza = new BJCheesePizza();

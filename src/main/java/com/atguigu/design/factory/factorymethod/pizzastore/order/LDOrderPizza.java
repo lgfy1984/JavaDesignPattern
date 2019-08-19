@@ -7,10 +7,10 @@ import com.atguigu.design.factory.factorymethod.pizzastore.pizza.Pizza;
 
 public class LDOrderPizza extends OrderPizza {
 
-	
+
 	@Override
-    Pizza createPizza(String orderType) {
-	
+	Pizza createPizza(String orderType) {
+
 		Pizza pizza = null;
 		if(orderType.equals("cheese")) {
 			pizza = new LDCheesePizza();
@@ -22,3 +22,4 @@ public class LDOrderPizza extends OrderPizza {
 	}
 
 }
+

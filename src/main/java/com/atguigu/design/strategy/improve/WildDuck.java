@@ -2,18 +2,18 @@ package com.atguigu.design.strategy.improve;
 
 public class WildDuck extends Duck {
 
-	
-	//������������FlyBehavor �Ķ���
+
+	//构造器，传入FlyBehavor 的对象
 	public  WildDuck() {
 		// TODO Auto-generated constructor stub
 		flyBehavior = new GoodFlyBehavior();
 	}
-	
-	
+
+
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println(" ����ҰѼ ");
+		System.out.println(" 这是野鸭 ");
 	}
 
 }

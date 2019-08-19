@@ -1,9 +1,8 @@
 package com.atguigu.design.state.money;
 
-//����������
+//环境上下文
 public class Context extends AbstractState{
-	//��ǰ��״̬ state, �������ǵ�ҵ�����̴�����ͣ�ı仯
-	private State state;
+    private State state;
 
     @Override
     public void checkEvent(Context context) {
@@ -63,7 +62,7 @@ public class Context extends AbstractState{
 
     @Override
     public String getCurrentState() {
-        System.out.println("��ǰ״̬ : " + state.getCurrentState());
+        System.out.println("当前状态 : " + state.getCurrentState());
         return state.getCurrentState();
     }
 }

@@ -1,10 +1,11 @@
 package com.atguigu.design.visitor;
 
 public abstract class Action {
-	
-	//�õ����� �Ĳ���
+
+	//得到男性 的测评
 	public abstract void getManResult(Man man);
-	
-	//�õ�Ů�� ����
+
+	//得到女的 测评
 	public abstract void getWomanResult(Woman woman);
 }
+

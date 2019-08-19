@@ -1,7 +1,8 @@
 package com.atguigu.design.uml.composition;
 
 public class Person {
-    private IDCard card; //�ۺϹ�ϵ
-    private Head head = new Head(); //��Ϲ�ϵ
+    private IDCard card; //聚合关系
+    private Head head = new Head(); //组合关系
+
 
 }

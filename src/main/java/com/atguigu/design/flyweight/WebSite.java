@@ -2,5 +2,5 @@ package com.atguigu.design.flyweight;
 
 public abstract class WebSite {
 
-	public abstract void use(User user);//���󷽷�
+	public abstract void use(User user);//抽象方法
 }

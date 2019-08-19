@@ -1,13 +1,12 @@
 package com.atguigu.design.responsibilitychain;
 
-
-//������
+//请求类
 public class PurchaseRequest {
 
-	private int type = 0; //��������
-	private float price = 0.0f; //������
+	private int type = 0; //请求类型
+	private float price = 0.0f; //请求金额
 	private int id = 0;
-	//������
+	//构造器
 	public PurchaseRequest(int type, float price, int id) {
 		this.type = type;
 		this.price = price;
@@ -22,9 +21,9 @@ public class PurchaseRequest {
 	public int getId() {
 		return id;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }

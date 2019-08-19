@@ -2,11 +2,13 @@ package com.atguigu.design.command;
 
 public class TVOffCommand implements Command {
 
-	// �ۺ�TVReceiver
+
+
+	// 聚合TVReceiver
 
 	TVReceiver tv;
 
-	// ������
+	// 构造器
 	public TVOffCommand(TVReceiver tv) {
 		super();
 		this.tv = tv;
@@ -15,14 +17,14 @@ public class TVOffCommand implements Command {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		tv.off();
 	}
 
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		tv.on();
 	}
 }

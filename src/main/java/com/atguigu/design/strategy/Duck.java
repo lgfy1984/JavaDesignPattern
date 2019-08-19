@@ -3,21 +3,21 @@ package com.atguigu.design.strategy;
 public abstract class Duck {
 
 	public Duck() {
-	
+
 	}
 
-	public abstract void display();//��ʾѼ����Ϣ
-	
+	public abstract void display();//显示鸭子信息
+
 	public void quack() {
-		System.out.println("Ѽ�Ӹ¸½�~~");
+		System.out.println("鸭子嘎嘎叫~~");
 	}
-	
+
 	public void swim() {
-		System.out.println("Ѽ�ӻ���Ӿ~~");
+		System.out.println("鸭子会游泳~~");
 	}
-	
+
 	public void fly() {
-		System.out.println("Ѽ�ӻ����~~~");
+		System.out.println("鸭子会飞翔~~~");
 	}
-	
+
 }

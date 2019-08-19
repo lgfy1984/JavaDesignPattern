@@ -1,17 +1,17 @@
 package com.atguigu.design.facade;
 
 public class HomeTheaterFacade {
-	
-	//���������ϵͳ����
+
+	//定义各个子系统对象
 	private TheaterLight theaterLight;
 	private Popcorn popcorn;
 	private Stereo stereo;
 	private Projector projector;
 	private Screen screen;
 	private DVDPlayer dVDPlayer;
-	
-	
-	//������
+
+
+	//构造器
 	public HomeTheaterFacade() {
 		super();
 		this.theaterLight = TheaterLight.getInstance();
@@ -22,8 +22,8 @@ public class HomeTheaterFacade {
 		this.dVDPlayer = DVDPlayer.getInstanc();
 	}
 
-	//�����ֳ� 4 ��
-	
+	//操作分成 4 步
+
 	public void ready() {
 		popcorn.on();
 		popcorn.pop();
@@ -33,15 +33,15 @@ public class HomeTheaterFacade {
 		dVDPlayer.on();
 		theaterLight.dim();
 	}
-	
+
 	public void play() {
 		dVDPlayer.play();
 	}
-	
+
 	public void pause() {
 		dVDPlayer.pause();
 	}
-	
+
 	public void end() {
 		popcorn.off();
 		theaterLight.bright();
@@ -52,7 +52,7 @@ public class HomeTheaterFacade {
 	}
 
 
-	
-	
-	
+
+
+
 }

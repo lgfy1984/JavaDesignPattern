@@ -1,12 +1,12 @@
 package com.atguigu.design.builder;
 
 public abstract class AbstractHouse {
-	
-	//��ػ�
+
+	//打地基
 	public abstract void buildBasic();
-	//��ǽ
+	//砌墙
 	public abstract void buildWalls();
-	//�ⶥ
+	//封顶
 	public abstract void roofed();
 	
 	public void build() {
