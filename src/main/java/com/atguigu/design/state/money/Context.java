@@ -2,6 +2,7 @@ package com.atguigu.design.state.money;
 
 //环境上下文
 public class Context extends AbstractState{
+    //当前的状态 state, 根据我们的业务流程处理，不停的变化
     private State state;
 
     @Override
