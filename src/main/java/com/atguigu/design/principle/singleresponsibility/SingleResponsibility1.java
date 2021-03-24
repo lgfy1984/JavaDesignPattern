@@ -1,5 +1,8 @@
 package com.atguigu.design.principle.singleresponsibility;
 
+/**
+ * 单一职责原则(反例)
+ */
 public class SingleResponsibility1 {
 
 	public static void main(String[] args) {
